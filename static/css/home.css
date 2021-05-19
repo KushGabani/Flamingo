@@ -26,7 +26,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 2em 2rem 0 2rem;
+  margin: 0 2rem 0 2rem;
   padding: 2em;
 }
 
@@ -52,6 +52,11 @@ body {
 
 .tabs {
   margin: 0 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #2c2c2c;
 }
 
 .active-tab {
