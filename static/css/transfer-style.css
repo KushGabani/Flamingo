@@ -54,9 +54,41 @@ body {
   height: 100%;
 }
 
-.dropzone {
+.dropzone-container {
+  position: relative;
   height: 90%;
-  background-color: lightgoldenrodyellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropzone {
+  border-radius: 50%;
+  width: 35rem;
+  height: 35rem;
+  background-color: white;
+  background-image: url("./../assets/dropzone-bg.svg");
+  background-position-y: 90%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: none;
+  color: white;
+  padding: 0 8rem;
+}
+
+#transfer-button {
+  position: absolute;
+  bottom: 10%;
+  left: 42%;
+  background-color: #ff4242;
+  padding: 0.8rem 2.5rem;
+  box-shadow: 0px 7px 36px rgba(235, 28, 36, 0.4);
+  border-radius: 12px;
+  border: none;
+  color: white;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  font-weight: 500;
 }
 
 .footer {

@@ -1,6 +1,6 @@
 {% extends "base.html" %} {% block title%}
 <title>Flamingo - Style Transfer</title>
-{% endblock %} {% block css%}
+{{ dropzone.load_css() }} {% endblock %} {% block css%}
 <link
   rel="stylesheet"
   href="{{ url_for('static', filename='css/transfer-style.css') }}"
@@ -17,12 +17,23 @@
     <div></div>
   </div>
   <div class="content-wrapper">
-    <div class="dropzone"></div>
+    <div class="dropzone-container">
+      {{ dropzone.create(action='style_transfer') }} {{ dropzone.load_js() }} {{
+      dropzone.config() }}
+    </div>
     <div class="footer">
       <p>Github</p>
       <p>Dataset</p>
       <p>Curated Collection</p>
     </div>
   </div>
+  {{dropzone.load_js()}}
 </div>
+{% endblock %} {% block scriptFooter %}
+<footer>
+  <script
+    type="text/javascript"
+    src="{{ url_for('static', filename='js/style-transfer.js') }}"
+  ></script>
+</footer>
 {% endblock %}
