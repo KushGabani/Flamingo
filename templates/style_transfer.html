@@ -3,8 +3,26 @@
 {% endblock %} {% block css%}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='css/style_transfer.css') }}"
+  href="{{ url_for('static', filename='css/transfer-style.css') }}"
 />
 {% endblock %} {% block content %}
-<h1>Style Transfer</h1>
+<div class="page-wrapper">
+  <div class="top-bar">
+    <div class="back">
+      <img src="{{ url_for('static', filename='assets/back.svg') }}" />
+    </div>
+    <div class="caption">
+      Bring <span style="color: #ff4242">creativity</span> to life
+    </div>
+    <div></div>
+  </div>
+  <div class="content-wrapper">
+    <div class="dropzone"></div>
+    <div class="footer">
+      <p>Github</p>
+      <p>Dataset</p>
+      <p>Curated Collection</p>
+    </div>
+  </div>
+</div>
 {% endblock %}
