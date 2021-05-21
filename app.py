@@ -76,5 +76,10 @@ def delete_file():
         return "file deleted"
 
 
+@app.route("/curated-collection", methods=['GET'])
+def collection():
+    return render_template("curated_collection.html")
+
+
 if __name__ == "__main__":
     app.run(debug=True)

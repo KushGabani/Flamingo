@@ -1,0 +1,87 @@
+{% extends "base.html" %} {% block title%}
+<title>Flamingo - Home</title>
+{% endblock %} {% block css%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/curated_collection.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="page-wrapper">
+  <div class="nav-bar">
+    <a href="/" class="link">
+      <p class="site-title">Flamingo<span class="period">.</span></p>
+    </a>
+    <div class="navigation-tabs">
+      <a class="link" href="/"><p class="tabs">Home</p></a>
+      <span class="separator">|</span>
+      <div class="tabs active-tab">
+        Curated Collection
+        <hr color="#ff4242" />
+      </div>
+      <span class="separator">|</span>
+      <a class="link" href="/about"><p class="tabs">About</p></a>
+    </div>
+  </div>
+
+  <div class="content-wrapper">
+    <div class="upper-section">
+      <div class="c1">
+        <img
+          src="{{url_for('static', filename='assets/c1.png')}}"
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </div>
+    <div class="lower-section">
+      <div class="c2">
+        <img
+          src="{{url_for('static', filename='assets/c2.png')}}"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="lower-sub">
+        <div class="sub1">
+          <div class="audio1">
+            <div class="audio"></div>
+          </div>
+          <div class="c3">
+            <img
+              src="{{url_for('static', filename='assets/c3.png')}}"
+              width="100%"
+              height="100%"
+            />
+          </div>
+        </div>
+        <div class="sub2">
+          <div class="c4">
+            <img
+              src="{{url_for('static', filename='assets/c4.png')}}"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <div class="audio2">
+            <div class="audio"></div>
+          </div>
+        </div>
+      </div>
+      <div class="c5">
+        <img
+          src="{{url_for('static', filename='assets/c5.png')}}"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="c6">
+        <img
+          src="{{url_for('static', filename='assets/c6.png')}}"
+          width="100%"
+          height="100%"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

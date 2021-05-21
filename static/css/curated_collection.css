@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  color: #2c2c2c;
+  font-family: "Poppins";
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 2rem 0 2rem;
+  padding: 2em;
+}
+
+.site-title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.7rem;
+  letter-spacing: 0.015em;
+  color: #2c2c2c;
+}
+
+.period {
+  color: #ff4242;
+}
+
+.navigation-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.tabs {
+  margin: 0 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.active-tab {
+  font-weight: 700;
+  color: #ff4242;
+}
+
+.content-wrapper {
+  height: 80%;
+  margin: 1rem 4rem 0 4rem;
+}
+
+.upper-section {
+  height: 50%;
+  display: flex;
+  background-color: antiquewhite;
+  margin: 0 0 1rem 0;
+}
+
+.lower-section {
+  height: 50%;
+  display: flex;
+  margin: 1rem 0;
+}
+
+.c1 {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+.c2 {
+  width: 25%;
+  padding: 1rem;
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.lower-sub {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub1 {
+  display: flex;
+  height: 50%;
+  background-color: #f4f4f4;
+}
+
+.sub2 {
+  display: flex;
+  height: 50%;
+  margin-top: 0.5rem;
+  background-color: #f4f4f4;
+}
+
+.audio1 {
+  width: 30%;
+  padding: 1rem;
+}
+
+.audio2 {
+  width: 30%;
+  padding: 1rem;
+}
+
+.c3 {
+  width: 70%;
+  background-color: #f4f4f4;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.c4 {
+  width: 70%;
+  background-color: #f4f4f4;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.audio {
+  width: 100%;
+  height: 100%;
+  background-color: #ff4242;
+}
+
+.c5 {
+  width: 15%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}
+
+.c6 {
+  width: 25%;
+  padding: 1rem;
+  background-color: #f4f4f4;
+}

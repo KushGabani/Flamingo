@@ -15,9 +15,13 @@
         <hr color="#ff4242" />
       </div>
       <span class="separator">|</span>
-      <p class="tabs">Curated Collection</p>
+      <a class="link" href="/curated-collection">
+        <p class="tabs">Curated Collection</p>
+      </a>
       <span class="separator">|</span>
-      <a class="link" href="/about"><p class="tabs">About</p></a>
+      <a class="link" href="/about">
+        <p class="tabs">About</p>
+      </a>
     </div>
   </div>
 
@@ -29,23 +33,27 @@
       <p class="hero-subtitle">
         Ambition without intelligence is<br />a bird without wings.
       </p>
-      <div class="music-module">
-        <p>Produce Music</p>
-        <div class="divider-color"></div>
-        <img
-          src="{{url_for('static', filename='assets/open_link_color.svg')}}"
-          width="15%"
-        />
-      </div>
-      <div class="style-module">
-        <p>Transfer Style</p>
-        <div class="divider"></div>
-        <img
-          src="{{url_for('static', filename='assets/open_link_white.svg')}}"
-          style="color: white"
-          width="15%"
-        />
-      </div>
+      <a href="/music-generation" class="link"
+        ><div class="music-module">
+          <p>Produce Music</p>
+          <div class="divider-color"></div>
+          <img
+            src="{{url_for('static', filename='assets/open_link_color.svg')}}"
+            width="15%"
+          />
+        </div>
+      </a>
+      <a href="/style-transfer" class="link"
+        ><div class="style-module">
+          <p>Transfer Style</p>
+          <div class="divider"></div>
+          <img
+            src="{{url_for('static', filename='assets/open_link_white.svg')}}"
+            style="color: white"
+            width="15%"
+          />
+        </div>
+      </a>
     </div>
     <div class="prop">
       <img
@@ -54,7 +62,13 @@
       />
     </div>
     <div class="footer">
-      <p>Github</p>
+      <a
+        href="https://github.com/KushGabani/flamingo"
+        class="link"
+        target="_blank"
+      >
+        <p>Github</p>
+      </a>
       <p>Datasets</p>
       <p>Documentation</p>
     </div>

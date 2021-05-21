@@ -8,11 +8,15 @@
 {% endblock %} {% block content %}
 <div class="page-wrapper">
   <div class="nav-bar">
-    <p class="site-title">Flamingo<span class="period">.</span></p>
+    <a href="/" class="link">
+      <p class="site-title">Flamingo<span class="period">.</span></p>
+    </a>
     <div class="navigation-tabs">
-      <a class="link" href="/home"><p class="tabs">Home</p></a>
+      <a class="link" href="/"><p class="tabs">Home</p></a>
       <span class="separator">|</span>
-      <p class="tabs">Curated Collection</p>
+      <a class="link" href="/curated-collection">
+        <p class="tabs">Curated Collection</p>
+      </a>
       <span class="separator">|</span>
       <div class="tabs active-tab">
         About
