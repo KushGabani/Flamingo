@@ -7,10 +7,11 @@
 />
 {% endblock %} {% block content %}
 <div class="page-wrapper">
-  <div class="top-bar">
-    <div class="back">
-      <img src="{{ url_for('static', filename='assets/back.svg') }}" />
-    </div>
+    <a href="/"><div class="top-bar">
+      <div class="back">
+        <img src="{{ url_for('static', filename='assets/back.svg') }}" />
+      </div>
+    </a>
     <div class="caption">
       Bring <span style="color: #ff4242">creativity</span> to life
     </div>
