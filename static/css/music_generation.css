@@ -95,16 +95,14 @@ body {
 }
 
 .option-icon {
-  width: 3rem;
-  height: 3rem;
-  padding: 1.5rem;
+  height: 4rem;
+  padding: 1rem;
   margin: 1.7rem 1.7rem 1.7rem 0;
   background-color: rgb(206, 206, 206);
   border-radius: 12px;
-}
-
-.option-icon {
-  fill: #ff4242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .duration-container {

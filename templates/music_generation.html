@@ -30,75 +30,42 @@
       <form method="POST" action="/music-generation">
         <div class="form">
         <div class="select-instrument">
-            <p>Select an instrument</p>
+            <p>Select an artist</p>
             <div class="options">
-                <div class="subset-1">
-                    <input type="radio" name="instrument" value="piano" class="rd-button" id="piano" />
-                    <label for="piano">
-                        <div class="option-icon piano-icon">
-                            <img
-                                src="{{ url_for('static', filename='assets/piano-w.svg') }}"
-                                width="100%"
-                            />
-                        </div>
-                    </label>
+              <input type="radio" name="instrument" value="beethoven" class="rd-button" id="beethoven" />
+              <label for="beethoven">
+                  <div class="option-icon">
+                      <img
+                          src="{{ url_for('static', filename='assets/beethoven.png') }}"
+                          width="80%"
+                      />
+                  </div>
+              </label>
 
-                    <input type="radio" name="instrument" value="violin" class="rd-button" id="violin" />
-                    <label for="violin">
-                        <div class="option-icon violin-icon">
-                            <img
-                                src="{{ url_for('static', filename='assets/violin-w.svg') }}"
-                                width="100%"
-                            />
-                        </div>
-                    </label>
+              <input type="radio" name="instrument" value="mozart" class="rd-button" id="mozart" />
+              <label for="mozart">
+                  <div class="option-icon">
+                    <img
+                        src="{{ url_for('static', filename='assets/mozart.png') }}"
+                        width="90%"
+                    />
+                  </div>
+              </label>
 
-                    <input type="radio" name="instrument" value="guitar" class="rd-button" id="guitar" />
-                    <label for="guitar">
-                        <div class="option-icon guitar-icon">
-                            <img
-                                src="{{ url_for('static', filename='assets/guitar-w.svg') }}"
-                                width="100%"
-                            />
-                        </div>
-                    </label>
-                </div>
-                <div class="subset-2">
-                    <input type="radio" name="instrument" value="drums" class="rd-button" id="drums" />
-                    <label for="drums">
-                    <div class="option-icon drums-icon">
-                            <img
-                                src="{{ url_for('static', filename='assets/drums-w.svg') }}"
-                                width="100%"
-                            />
-                        </div>
-                    </label>
-
-                    <input type="radio" name="instrument" value="flute" class="rd-button" id="flute" />
-                    <label for="flute">
-                        <div class="option-icon flute-icon">
-                            <img
-                                src="{{ url_for('static', filename='assets/flute-w.svg') }}"
-                                width="100%"
-                            />
-                        </div>
-                    </label>
-                    
-                    <input type="radio" name="instrument" value="trumpet" class="rd-button" id="trumpet" />
-                    <label for="trumpet">
-                        <div class="option-icon trumpet-icon">
-                            <img
-                                src="{{ url_for('static', filename='assets/trumpet-w.svg') }}"
-                                width="100%"
-                            />
-                        </div>
-                    </label>
-                </div>
-            </div>
+              <input type="radio" name="instrument" value="schubert" class="rd-button" id="schubert" />
+              <label for="schubert">
+                  <div class="option-icon">
+                      <img
+                          src="{{ url_for('static', filename='assets/schubert.png') }}"
+                          width="70%"
+                      />
+                  </div>
+              </label>
+          </div>
         </div>
         <div class="duration-container">
-            <p class"duration-label>Duration (in seconds)</p>
-            <input type='text' name="duration" class="duration" />
+            <p class"duration-label">Duration (in seconds)</p>
+            <input type='number' name="duration" class="duration" autocomplete="off" />
         </div>
         <input type="submit" name="submit" class="submit" value="Create"/>
         </div>
