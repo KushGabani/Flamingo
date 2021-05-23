@@ -52,36 +52,68 @@ body {
 .content-wrapper {
   width: 60%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .dropzone-container {
-  position: relative;
   height: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .dropzone {
   border-radius: 50%;
-  width: 35rem;
-  height: 35rem;
+  width: 30rem;
+  height: 30rem;
   background-color: white;
   background-image: url("./../assets/dropzone-bg.svg");
-  background-position-y: 90%;
   background-repeat: no-repeat;
   background-size: 100%;
   border: none;
   color: white;
-  padding: 0 8rem;
 }
 
-#transfer-button {
-  position: absolute;
-  bottom: 10%;
-  left: 42%;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.options {
+  margin: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rd-button {
+  display: none;
+}
+
+.option-icon {
+  width: max-content;
+  padding: 0.5rem 2rem;
+  margin: 0 0.8rem;
+  background-color: #f1f1f1;
+  border-radius: 12px;
+}
+
+.rd-button:checked + label > div {
+  background-color: #ffffff;
+  padding: 0.3rem 1.9rem;
+  border: 3px solid #ff4242;
+  box-shadow: 0px 7px 36px rgba(235, 28, 36, 0.4);
+}
+
+.transfer-button {
   background-color: #ff4242;
   padding: 0.8rem 2.5rem;
+  margin: 1rem 0;
   box-shadow: 0px 7px 36px rgba(235, 28, 36, 0.4);
   border-radius: 12px;
   border: none;
@@ -89,19 +121,4 @@ body {
   font-family: "Poppins";
   font-size: 1.3rem;
   font-weight: 500;
-}
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer p {
-  margin: 1rem 2rem;
-  font-family: Work Sans;
-  font-size: 1.3rem;
-  line-height: 130.5%;
-  letter-spacing: 0.015em;
-  color: #ff4242;
 }
