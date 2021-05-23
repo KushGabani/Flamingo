@@ -44,7 +44,19 @@
       <div class="lower-sub">
         <div class="sub1">
           <div class="audio1">
-            <div class="audio"></div>
+            <audio loop="false" id="m1">
+              <source
+                src="{{url_for('static', filename='assets/m1.mp3')}}"
+                type="audio/mpeg"
+              />
+            </audio>
+            <div class="audio">
+              <img
+                src="{{url_for('static', filename='assets/play.svg')}}"
+                id="p1"
+              />
+              <h4 style="margin-top: 1rem">The First</h4>
+            </div>
           </div>
           <div class="c3">
             <img
@@ -63,7 +75,19 @@
             />
           </div>
           <div class="audio2">
-            <div class="audio"></div>
+            <audio loop="false" id="m2">
+              <source
+                src="{{url_for('static', filename='assets/m2.mp3')}}"
+                type="audio/mpeg"
+              />
+            </audio>
+            <div class="audio">
+              <img
+                src="{{url_for('static', filename='assets/play.svg')}}"
+                id="p2"
+              />
+              <h4 style="margin-top: 1rem">The Fifth</h4>
+            </div>
           </div>
         </div>
       </div>
@@ -84,4 +108,37 @@
     </div>
   </div>
 </div>
+{% endblock %} {% block scriptFooter %}
+<script>
+  is_audio_1_playing = false;
+  is_audio_2_playing = false;
+  audio1 = document.getElementById("m1");
+  audio2 = document.getElementById("m2");
+
+  document.getElementById("p1").addEventListener("click", function () {
+    if (is_audio_2_playing) {
+      audio2.pause();
+    }
+    if (is_audio_1_playing) {
+      audio1.pause();
+      is_audio_1_playing = false;
+    } else {
+      is_audio_1_playing = true;
+      audio1.play();
+    }
+  });
+
+  document.getElementById("p2").addEventListener("click", function () {
+    if (is_audio_1_playing) {
+      audio1.pause();
+    }
+    if (is_audio_2_playing) {
+      audio2.pause();
+      is_audio_2_playing = false;
+    } else {
+      is_audio_2_playing = true;
+      audio2.play();
+    }
+  });
+</script>
 {% endblock %}

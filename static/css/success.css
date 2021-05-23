@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  color: #2c2c2c;
+  font-family: "Poppins";
+}
+
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 5rem;
+  line-height: 7rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 4rem;
+}
+
+.card {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 3rem 0 3rem;
+  background: #ffffff;
+  box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.05),
+    10px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.greetings-title {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  letter-spacing: 0.015em;
+}
+
+.greetings-subtitle {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.7rem;
+  line-height: 3rem;
+  letter-spacing: 0.015em;
+}
+
+.content {
+  margin: 3rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.caption {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2rem;
+  letter-spacing: 0.015em;
+}
+
+.player {
+  margin-left: 4rem;
+}

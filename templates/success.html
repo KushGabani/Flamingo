@@ -1,0 +1,32 @@
+{% extends "base.html" %} {% block title%}
+<title>Flamingo - Home</title>
+<script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
+{% endblock %} {% block css%}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='css/success.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="page-wrapper">
+  <div class="heading">Flamingo<span style="color: #ff4242">.</span></div>
+  <div class="card">
+    <p class="greetings-title">CONGRATULATIONS</p>
+    <div class="greetings-subtitle">
+      You created <span style="color: #ff4242">Art with AI</span>
+    </div>
+
+    <div class="content">
+      <p class="caption">{{ artist }}-like music</p>
+      <midi-player
+        src="{{ url_for('static', filename=audio_src)}}"
+        class="player"
+      >
+      </midi-player>
+    </div>
+    <img
+      src="{{ url_for('static', filename='assets/home_prop.png') }}"
+      width="45%"
+    />
+  </div>
+</div>
+{% endblock %}
