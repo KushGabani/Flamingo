@@ -1,5 +1,5 @@
 {% extends "base.html" %} {% block title%}
-<title>Flamingo - Home</title>
+<title>Flamingo - Results</title>
 <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.21.0/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.1.1"></script>
 {% endblock %} {% block css%}
 <link
@@ -8,7 +8,9 @@
 />
 {% endblock %} {% block content %}
 <div class="page-wrapper">
-  <div class="heading">Flamingo<span style="color: #ff4242">.</span></div>
+  <a href="/" class="link">
+    <div class="heading">Flamingo<span style="color: #ff4242">.</span></div>
+  </a>
   <div class="card">
     <p class="greetings-title">CONGRATULATIONS</p>
     <div class="greetings-subtitle">
@@ -16,6 +18,7 @@
     </div>
 
     <div class="content">
+      {% if is_music_module == "true" %}
       <p class="caption">{{ artist }}-like music</p>
       <midi-player
         src="{{ url_for('static', filename=audio_src)}}"
@@ -27,6 +30,9 @@
       src="{{ url_for('static', filename='assets/home_prop.png') }}"
       width="45%"
     />
+    {% else %}
+    <img src="{{ url_for('static', filename=image_src) }}" />
+    {% endif %}
   </div>
 </div>
 {% endblock %}

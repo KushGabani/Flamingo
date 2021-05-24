@@ -1,5 +1,6 @@
 absl-py==0.12.0
 astunparse==1.6.3
+autopep8==1.5.7
 cachetools==4.2.2
 certifi==2020.12.5
 chardet==4.0.0
@@ -34,6 +35,7 @@ Pillow==8.2.0
 protobuf==3.17.0
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
+pycodestyle==2.7.0
 pyparsing==2.4.7
 python-dateutil==2.8.1
 requests==2.25.1
@@ -46,6 +48,7 @@ tensorboard-plugin-wit==1.8.0
 tensorflow==2.5.0
 tensorflow-estimator==2.5.0
 termcolor==1.1.0
+toml==0.10.2
 typing-extensions==3.7.4.3
 urllib3==1.26.4
 webcolors==1.11.1

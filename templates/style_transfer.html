@@ -20,12 +20,19 @@
   <div class="content-wrapper">
     <div class="dropzone-container">
     {{ dropzone.create('/upload-content') }}
-    <form action="/style-transfer" method="POST" class="form">
+    <form action="/handle-transfer-form" method="POST" class="form">
       <div class="options">
         <input type="radio" name="style-image" value="wave" class="rd-button" id="wave" />
         <label for="wave">
           <div class="option-icon">
               <h3>Wave</h3>
+          </div>
+        </label>
+
+        <input type="radio" name="style-image" value="adobe" class="rd-button" id="adobe" />
+        <label for="adobe">
+          <div class="option-icon">
+              <h3>Woman</h3>
           </div>
         </label>
 
@@ -36,10 +43,10 @@
           </div>
         </label>
 
-        <input type="radio" name="style-image" value="night" class="rd-button" id="night" />
-        <label for="night">
+        <input type="radio" name="style-image" value="edward" class="rd-button" id="edward" />
+        <label for="edward">
           <div class="option-icon">
-              <h3>Starry Night</h3>
+              <h3>Edward</h3>
           </div>
         </label>
 
@@ -71,11 +78,27 @@
               <h3>Talig</h3>
           </div>
         </label>
+
+        <input type="radio" name="style-image" value="monalisa" class="rd-button" id="monalisa" />
+        <label for="monalisa">
+          <div class="option-icon">
+              <h3>Mona Lisa</h3>
+          </div>
+        </label>
       </div>
       <button type="submit"  id="upload" class="transfer-button">Transfer Style</button>
     </form>
     {{ dropzone.load_js() }} {{ dropzone.config() }}
     </div>
   </div>
+  <div class="footer">
+      <a href="https://github.com/KushGabani/Flamingo/tree/main/style_transfer" target="_blank" class="link">
+        <p>Github</p>
+      </a>
+      <a href="https://drive.google.com/drive/folders/1r3DpGudMGkOUqRCNapR9HdPqBEyMvHT8?usp=sharing" target="_blank" class="link">
+        <p>Datasets</p>
+      </a>
+      <p>Documentation</p>
+    </div>
 </div>
 {% endblock %}

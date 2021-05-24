@@ -21,6 +21,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url("./../assets/success_background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heading {
@@ -40,8 +43,8 @@ body {
   align-items: center;
   padding: 3rem 3rem 0 3rem;
   background: #ffffff;
-  box-shadow: -10px -10px 30px rgba(0, 0, 0, 0.05),
-    10px 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: -15px -15px 45px rgba(0, 0, 0, 0.15),
+    15px 15px 45px rgba(0, 0, 0, 0.15);
 }
 
 .greetings-title {
@@ -61,7 +64,7 @@ body {
 }
 
 .content {
-  margin: 3rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,4 +80,9 @@ body {
 
 .player {
   margin-left: 4rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #2c2c2c;
 }

@@ -35,6 +35,11 @@ body {
   height: 50px;
 }
 
+.link {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
 .caption {
   font-family: "Playfair Display";
   font-weight: bold;

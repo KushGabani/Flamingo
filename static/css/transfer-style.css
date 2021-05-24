@@ -122,3 +122,20 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer p {
+  margin: 0 1.5rem;
+  color: #ff4242;
+  font-size: 1.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #2c2c2c;
+}
