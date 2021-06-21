@@ -7,7 +7,6 @@ from PIL import Image
 import warnings
 from style_transfer.utils import clip_0_1, tensor_to_image
 warnings.filterwarnings("ignore")
-style = input("Style Image to use: ")
 
 
 def show_n(images, titles=('',)):
@@ -24,9 +23,8 @@ def show_n(images, titles=('',)):
     plt.show()
 
 
-content_image = load_image("uploads/content.jpg", (1024, 1024))
-style_image = load_image(
-    f"static/style_images/{style}.jpg", (256, 256))
+content_image = load_image("./content.jpg", (1024, 1024))
+style_image = load_image("./style.jpg", (256, 256))
 
 model = tf.keras.models.load_model("style_transfer/models/arbitrary/")
 outputs = model(tf.constant(content_image), tf.constant(style_image))[0][0]
