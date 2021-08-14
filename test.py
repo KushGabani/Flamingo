@@ -30,5 +30,5 @@ model = tf.keras.models.load_model("style_transfer/models/arbitrary/")
 outputs = model(tf.constant(content_image), tf.constant(style_image))[0][0]
 plt.imshow(outputs)
 plt.axis("off")
-plt.savefig(f"./output_{style}")
+plt.savefig(f"./output_style.jpg")
 print("finished")
